@@ -1,0 +1,66 @@
+.win {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 25px;
+    height: 600px;
+    display: none;
+}
+
+#logo-result{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.yoda-result{
+    position: absolute;
+    width: 400px;
+    left: 4%;
+    bottom: 0;
+}
+.bubble{
+    margin-top: 25px;
+    width: 600px;
+}
+
+.yoda-speak{
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    top: 48%;
+    left: 35%;
+}
+
+#reset{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border: none;
+    border-radius: 25px;
+    right: 2%;
+    bottom: 2%;
+    background-color: #DBA90D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#reset:hover{
+    background-color: #856e28;
+    transform: translateY(-2px);
+}
+
+.lost{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 25px;
+    height: 600px; 
+    display: none;
+}
+

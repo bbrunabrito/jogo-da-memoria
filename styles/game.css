@@ -1,0 +1,88 @@
+.game img{
+   
+    margin-bottom: 5px;
+}
+
+#logo-game{
+    width: 150px;
+}
+
+.game{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: none;
+    
+}
+
+.stage {
+    padding: 15px;
+    margin: auto;
+    background-color: #DBA90D;
+    width: 1000px;
+    height: 500px;
+    border-radius: 25px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.back, .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.front {
+    transform: rotateY(180deg);
+    background-color: #1a1f5a;
+    
+}
+
+.back {
+    background-color: #0d7bdb;
+    font-size: 42px;
+}
+
+.game .fa-jedi{
+    position: absolute;
+    top: 4%;
+    font-size: 24px;
+}
+
+#life-1{
+    right: 10%;
+    
+}
+
+#life-2{
+    right: 14%;
+}
+
+#life-3{
+    right: 18%;
+}
+
+
+
+
+

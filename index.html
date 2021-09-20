@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <script src="https://kit.fontawesome.com/7c55e7eb82.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/principal.css">
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/result.css">
+</head>
+<body>
+    <audio autoplay loop src="./assets/audio/Imperial song  John Williams.mp3" id="principal"></audio>
+    <audio src="./assets/audio/Star Wars Theme  John Williams.mp3" id="win"></audio>
+    <audio  src="./assets/audio/mixkit-sci-fi-positive-notification-266.wav" id="life"></audio>
+    <audio  src="./assets/audio/Dont fail me again.mp3" id="lost"></audio>
+    <!--Início-->
+    <div class="principal">
+        <img src="./assets/image/logo.png" id="logo-principla">
+
+        <h1>JOGO DA MEMÓRIA</h1>
+
+        <button type="button" id="start">START</button>
+    </div>
+
+    <!--Jogo-->
+    <div class="game">
+        <i class="fas fa-jedi" id="life-1"></i>
+        <i class="fas fa-jedi" id="life-2"></i>
+        <i class="fas fa-jedi" id="life-3"></i>
+        <img src="./assets/image/logo.png" id="logo-game">
+
+
+        <div class="stage">
+            <!--
+            <div class="card" data-icon="anakin-ad">
+                <div class="front">
+                    <img src="./assets/image/anakinAd.png" class="icon">
+                </div>
+                <div class="back">
+                    <i class="fab fa-galactic-republic"></i>
+                </div>
+            </div>-->
+
+           
+            </div>
+
+        </div>
+
+   
+    <!--Resultado-->
+
+    <div class="win">
+        <img src="./assets/image/logo.png" id="logo-result">
+
+        <h1>VOCÊ GANHOU</h1>
+
+        <img src="./assets/image/bubble.png" class="bubble">
+        <div class="yoda-speak">
+            <span>Que a Força esteja com você!</span>
+        </div>
+
+        <img src="./assets/image/BigYoda.png" class="yoda-result">
+
+        <button type="button" id="reset">REINICIAR</button>
+    </div>
+
+    <div class="lost">
+        <img src="./assets/image/logo.png" id="logo-result">
+
+        <h1>VOCÊ PERDEU!</h1>
+
+        <img src="./assets/image/bubble.png" class="bubble">
+        <div class="yoda-speak">
+            <span>Paciência você deve ter, meu jovem Padawan.</span>
+        </div>
+
+        <img src="./assets/image/BigYoda.png" class="yoda-result">
+
+        <button type="button" id="reset">REINICIAR</button>
+    </div>
+
+
+
+    <script src="./scripts/changeScreen.js"></script>
+    
+    <script src="./scripts/interface.js"></script>
+</body>
+</html>
